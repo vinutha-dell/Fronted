@@ -1,0 +1,207 @@
+ravik@USER MINGW64 ~ (master)
+$ git config --global user.email "yaligarvinutha@gmail.com"
+
+ravik@USER MINGW64 ~ (master)
+$ git config --global user.name "vinutha-dell"
+
+ravik@USER MINGW64 ~ (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/ravik/.git/
+
+ravik@USER MINGW64 ~ (master)
+$ touch login.html
+
+ravik@USER MINGW64 ~ (master)
+$ notepad login.html
+
+ravik@USER MINGW64 ~ (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .bash_history
+        .cache/
+        .docker/
+        .eclipse/
+ravik@USER MINGW64 ~ (master)
+$ mkdir frontend
+
+ravik@USER MINGW64 ~ (master)
+$ cd frontend
+
+ravik@USER MINGW64 ~/frontend (master)
+$ touch login.html
+
+ravik@USER MINGW64 ~/frontend (master)
+$ notepad login.html
+
+ravik@USER MINGW64 ~/frontend (master)
+$ ls -l
+total 1
+-rw-r--r-- 1 ravik 197609 18 Nov  9 12:27 login.html
+
+ravik@USER MINGW64 ~/frontend (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../.bash_history
+        ../.cache/
+        ../.docker/
+        ../.eclipse/
+        ../.gitconfig
+        ../.gradle/
+        ../.m2/
+        ../.node_repl_history
+        ../.p2/
+        ../.viminfo
+        ../.viminfo.tmp
+        ../.vscode/
+        ../AppData/
+        ../Application Data/
+        ../Contacts/
+        ../Cookies/
+        ../Documents/
+        ../Downloads/
+        ../Favorites/
+        ../Links/
+        ../Local Settings/
+        ../Music/
+        ../My Documents/
+        ../NTUSER.DAT
+        ../NTUSER.DAT{8e6db3f3-8643-11ee-9c8d-28c5d256358c}.TM.blf
+        ../NTUSER.DAT{8e6db3f3-8643-11ee-9c8d-28c5d256358c}.TMContainer00000000000000000001.regtrans-ms
+        ../NTUSER.DAT{8e6db3f3-8643-11ee-9c8d-28c5d256358c}.TMContainer00000000000000000002.regtrans-ms
+        ../NetHood/
+        ../OneDrive/
+        ../Recent/
+        ../Saved Games/
+        ../Searches/
+        ../SendTo/
+        ../Start Menu/
+        ../Videos/
+        ../dockerrepo/
+        ../eclipse-workspace/
+        ../eclipse/
+        ./
+        ../fsd.txt
+        ../fsd1.txt
+        ../gitcommands/
+        ../java.txt
+        ../login.html
+        ../ntuser.dat.LOG1
+        ../ntuser.dat.LOG2
+        ../ntuser.ini
+        ../sample.java
+        ../sample.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ravik@USER MINGW64 ~/frontend (master)
+$ ls -l
+total 1
+-rw-r--r-- 1 ravik 197609 18 Nov  9 12:27 login.html
+
+ravik@USER MINGW64 ~/frontend (master)
+$ git add .
+
+ravik@USER MINGW64 ~/frontend (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   login.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../.bash_history
+        ../.cache/
+        ../.docker/
+        ../.eclipse/
+        ../.gitconfig
+        ../.gradle/
+        ../.m2/
+        ../.node_repl_history
+        ../.p2/
+        ../.viminfo
+        ../.viminfo.tmp
+        ../.vscode/
+        ../AppData/
+        ../Application Data/
+        ../Contacts/
+        ../Cookies/
+        ../Documents/
+        ../Downloads/
+        ../Favorites/
+        ../Links/
+        ../Local Settings/
+        ../Music/
+        ../My Documents/
+        ../NTUSER.DAT
+        ../NTUSER.DAT{8e6db3f3-8643-11ee-9c8d-28c5d256358c}.TM.blf
+        ../NTUSER.DAT{8e6db3f3-8643-11ee-9c8d-28c5d256358c}.TMContainer00000000000000000001.regtrans-ms
+        ../NTUSER.DAT{8e6db3f3-8643-11ee-9c8d-28c5d256358c}.TMContainer00000000000000000002.regtrans-ms
+        ../NetHood/
+        ../OneDrive/
+        ../Recent/
+        ../Saved Games/
+        ../Searches/
+        ../SendTo/
+        ../Start Menu/
+        ../Videos/
+        ../dockerrepo/
+        ../eclipse-workspace/
+        ../eclipse/
+        ../fsd.txt
+        ../fsd1.txt
+        ../gitcommands/
+        ../java.txt
+        ../login.html
+        ../ntuser.dat.LOG1
+        ../ntuser.dat.LOG2
+        ../ntuser.ini
+        ../sample.java
+        ../sample.txt
+
+
+ravik@USER MINGW64 ~/frontend (master)
+$ git commit -m "Login file is added"
+[master 0c170cd] Login file is added
+ 1 file changed, 1 insertion(+)
+ create mode 100644 frontend/login.html
+
+ravik@USER MINGW64 ~/frontend (master)
+$ git remote add vinutha-dell "https://github.com/vinutha-dell/Fronted.git"
+
+ravik@USER MINGW64 ~/frontend (master)
+$ git clone "https://github.com/vinutha-dell/Fronted.git"
+Cloning into 'Fronted'...
+remote: Enumerating objects: 44, done.
+remote: Counting objects: 100% (44/44), done.
+remote: Compressing objects: 100% (33/33), done.
+remote: Total 44 (delta 10), reused 7 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (44/44), 14.31 KiB | 252.00 KiB/s, done.
+Resolving deltas: 100% (10/10), done.
+
+ravik@USER MINGW64 ~/frontend (master)
+$ git pull "https://github.com/vinutha-dell/Fronted.git"
+fatal: unable to access 'https://github.com/vinutha-dell/Fronted.git/': OpenSSL SSL_read: SSL_ERROR_SYSCALL, errno 0
+
+ravik@USER MINGW64 ~/frontend (master)
+$ git push "https://github.com/vinutha-dell/Fronted.git"
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (10/10), 787 bytes | 787.00 KiB/s, done.
+Total 10 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/vinutha-dell/Fronted/pull/new/master
+remote:
+To https://github.com/vinutha-dell/Fronted.git
+ * [new branch]      master -> master
+
+ravik@USER MINGW64 ~/frontend (master)
+$ notepad login.html
